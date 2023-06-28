@@ -20,17 +20,16 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: capitalize;
   color: rgb(135, 135, 135);
   font-size: 14px;
   font-weight: 100;
   line-height: 17px;
 }
 
-a{
+a {
   text-decoration: none;
 }
-
-
 
 .weather-app-wrapper {
   max-width: 600px;
