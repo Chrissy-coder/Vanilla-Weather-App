@@ -7,14 +7,14 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
- iconElement.setAttribute("src", response.data.condition.icon_url);
- iconElement.setAttribute("alt", response.data.condition.description);
-
+  iconElement.setAttribute("src", response.data.condition.icon_url);
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 function search(city) {
   let apiKey = "8f63022fa4b60b22c3t7fe8f63b45ob9";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=8f63022fa4b60b22c3t7fe8f63b45ob9&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  console.log(apiUrl);
   axios.get(apiUrl).then(displayTemperature);
 }
 
