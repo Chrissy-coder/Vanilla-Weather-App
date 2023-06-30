@@ -2,9 +2,14 @@ function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
+  let iconElement = document.querySelector("#icon");
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+ iconElement.setAttribute("src", response.data.condition.icon_url);
+ iconElement.setAttribute("alt", response.data.condition.description);
+
 }
 
 function search(city) {
