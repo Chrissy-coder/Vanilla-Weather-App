@@ -29,6 +29,48 @@ let currentTime = new Date();
 
 dateElement.innerHTML = formatDate(currentTime);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+ 
+    <div class="col-2">
+      <div class="forecast-date">Friday</div>
+      <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+        alt=""
+        width="42"
+      />
+      <div class="forecast-temperature">
+        <span class="weather-forecast-temperature-max"> 18° </span>
+        <span class="weather-forecast-temperature-min"> 12° </span>
+      </div>
+    </div>
+  
+  `;
+  forecastHTML =
+    forecastHTML +
+    `
+    <div class="col-2">
+      <div class="forecast-date">Friday</div>
+      <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+        alt=""
+        width="42"
+      />
+      <div class="forecast-temperature">
+        <span class="weather-forecast-temperature-max"> 18° </span>
+        <span class="weather-forecast-temperature-min"> 12° </span>
+      </div>
+    </div>
+  `;
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -93,3 +135,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displaycelsius);
 
 search("New York");
+displayForecast();
