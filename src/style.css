@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: rgb(85, 86, 89);
   display: block;
   font-size: 24px;
   font-weight: 100;
@@ -37,13 +37,20 @@ a {
 }
 
 .weather-app {
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 2px;
+  padding: 30px;
+  border: 1px solid #767677;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: dimgray;
+  border-style: hidden;
+  border-color: black;
 }
 
 .overview {
   margin-bottom: 20px;
+  margin-top: auto;
 }
 
 .weather-temperature img {
@@ -93,4 +100,9 @@ a {
 
 .weather-forecast-temperature-min {
   opacity: 0.6;
+}
+
+.form-control {
+  color: hsla(50, 4%, 72%, 0.95);
+  border-radius: 10px;
 }
