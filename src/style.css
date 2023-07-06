@@ -48,19 +48,25 @@ a {
 .overview {
   margin-bottom: 20px;
   margin-top: auto;
+  position: relative;
+  left: 80%;
 }
 
 .weather-temperature img {
-  float: left;
+  position: relative;
+  left: 80%;
+
   height: 64px;
   width: 64px;
 }
 
 .weather-temperature strong {
   color: rgb(85, 86, 89);
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 400;
   line-height: 1;
+  position: relative;
+  left: 200%;
 }
 
 .weather-temperature .units {
@@ -107,4 +113,22 @@ a {
 .btn {
   border-radius: 15px;
   padding: 10px auto;
+}
+
+.weather-forecast {
+  line-height: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #9aa0a6;
+  border-radius: 8px;
+}
+
+.current-details {
+  position: relative;
+  right: 110%;
+}
+
+.units {
+  position: relative;
+  left: 200%;
 }
