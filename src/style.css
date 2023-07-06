@@ -39,10 +39,8 @@ a {
 
 .weather-app {
   padding: 30px;
-  border: 1px #3d3d3d;
+  border: 1px solid #9aa0a6;
   border-radius: 10px;
-  opacity: inherit;
-  border-style: inset;
 }
 
 .overview {
@@ -121,6 +119,8 @@ a {
   padding-bottom: 7px;
   background-color: #9aa0a6;
   border-radius: 8px;
+  border-top: solid;
+  border-color: #3d3d3d;
 }
 
 .current-details {
