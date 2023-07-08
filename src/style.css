@@ -1,10 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #3d3d3d;
-  background-image: radial-gradient(
-    rgba(46, 46, 190, 0.5),
-    rgba(255, 255, 0, 0.5)
-  );
+  background-color: #d8d7d7e3;
 }
 
 h1 {
@@ -107,7 +104,7 @@ a {
 
 .form-control {
   border-radius: 15px;
-  background-color: #d8d7d7e3;
+  background-color: #fcf6f6e3;
 }
 
 .btn {
